@@ -1,0 +1,200 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>EasyDine</title> 
+ <link rel="stylesheet" href="style.css"> 
+<script> let isLoggedIn = 
+localStorage.getItem("loggedIn"); if (isLoggedIn 
+!== "true") { window.location.href = 
+"loginpage.html"; 
+ } 
+ </script> 
+</head> 
+<body> 
+ <div class="navbar"> 
+ <div class="title"><h2>EASYDINE</h2></div> 
+ <ul> 
+ <li><a href="#hero">Home</a></li> 
+ <li><a href="#sthead">Menu</a></li> 
+ <li><a href="#About">About</a></li>
+<li><a href="#contact">Contact</a></li> 
+ </ul> 
+ </div> 
+ <div id="hero"> 
+ <div class="para1"> 
+ <h1>Where Every Bite Feels Right</h1> 
+ <p class="p1">We serve happiness on a plate with passion and quality ingredients.</p> 
+<button>ORDER NOW</button> 
+ </div> 
+ <img class="heroimg" 
+src="https://images.stockcake.com/public/4/9/4/494e75270b704f6db997-
+00dd8b94d734_large/delicious-biryani-feast-stockcake.jpg"> 
+ </div> 
+ <h1 id="sthead">STARTERS</h1> 
+ <div class="menu1"> 
+ <div class="starters"> 
+ <img src="chicken65.jpg"> 
+ <p class="name"><strong>Chicken 65</strong><br>₹200</p> 
+ <div class="cart-controls" id="chicken65"> 
+ <button class="add-btn" onclick="addToCart('Chicken 
+65',200,'chicken65')">Add</button> 
+ </div> 
+</div> 
+ <div class="starters"> 
+ <img src="chickenlollipop.jpg"> 
+ <p class="name"><strong>Chicken Lollipop</strong><br>₹180</p> 
+ <div class="cart-controls" id="chickenlollipop"> 
+ <button class="add-btn" 
+onclick="addToCart('ChickenLollipop',180,'chickenlollipop')">Add</button> 
+ </div> 
+ </div>
+<div class="starters"> 
+ <img src="chickenkebab.jpg"> 
+ <p class="name"><strong>Chicken Kebab</strong><br>₹250</p> 
+ <div class="cart-controls" id="chickenkebab"> 
+ <button class="add-btn" 
+onclick="addToCart('ChickenKebab',250,'chickenkebab')">Add</button> 
+ </div> 
+ </div> 
+ <div class="starters"> 
+ <img src="tikka.jpg"> 
+ <p class="name"><strong>Chicken Tikka</strong><br>₹200</p> 
+ <div class="cart-controls" id="tikka"> 
+ <button class="add-btn" onclick="addToCart('Chicken Tikka',200,'tikka')">Add</button> 
+ </div> 
+ </div> 
+ </div> 
+ <h1 class="birhead">BIRYANIS</h1> 
+ <div class="menu2"> 
+ <div class="biryani"> 
+ <img src="dumbiryani.jpg"> 
+ <p class="name"><strong>Dum Biryani</strong><br>₹250</p> 
+ <div class="cart-controls" id="dumbiryani"> 
+ <button class="add-btn" onclick="addToCart('Dum 
+Biryani',250,'dumbiryani')">Add</button> 
+ </div> 
+ </div> 
+ <div class="biryani"> 
+ <img src="frypiece.jpg"> 
+ <p class="name"><strong>Frypiece Biryani</strong><br>₹300</p> 
+ <div class="cart-controls" id="frypiece">
+<button class="add-btn" 
+onclick="addToCart('FrypieceBiryani',300,'frypiece')">Add</button> </div> 
+</div> 
+ <div class="biryani"> 
+ <img src="kundabiryani.jpg"> 
+ <p class="name"><strong>Kunda Biryani</strong><br>₹380</p> 
+ <div class="cart-controls" id="kundabiryani"> 
+ <button class="add-btn" onclick="addToCart('Kunda 
+Biryani',380,'kundabiryani')">Add</button> </div> 
+ </div> 
+ <div class="biryani"> 
+ <img src="mandi.jpg"> 
+ <p class="name"><strong>Mandi Biryani</strong><br>₹680</p> 
+ <div class="cart-controls" id="mandi"> 
+ <button class="add-btn" onclick="addToCart('Mandi 
+Biryani',680,'mandi')">Add</button> 
+ </div> 
+ </div> 
+ </div> 
+ <h1 class="currhead">CURRY</h1> 
+ <div class="menu3"> 
+ <div class="curry"> 
+ <img src="chickenbuttermasala.jpg"> 
+ <p class="name"><strong>Chicken Butter Masala</strong><br>₹190</p> 
+ <div class="cart-controls" id="chickenbuttermasala"> 
+ <button class="add-btn" 
+ onclick="addToCart('Chicken 
+ButterMasala',190,'chickenbuttermasala')">Add</button> 
+ </div> 
+ </div> 
+ <div class="curry">
+<img src="chickencurry3.jpg"> 
+ <p class="name"><strong>Chicken Curry</strong><br>₹150</p> 
+ <div class="cart-controls" id="chickencurry"> 
+ <button class="add-btn" 
+onclick="addToCart('ChickenCurry',150,'chickencurry')">Add</button> 
+ </div> 
+ </div> 
+ <div class="curry"> 
+ <img src="pannerbuttermasala.jpg"> 
+ <p class="name"><strong>Paneer Butter Masala</strong><br>₹120</p> 
+ <div class="cart-controls" id="pannerbuttermasala"> 
+ <button class="add-btn" 
+onclick="addToCart('PaneerButterMasala',120,'pannerbuttermasala')">Add</button> 
+ </div> 
+ </div> 
+ <div class="curry"> 
+ <img src="kadaipaneer2.jpg"> 
+ <p class="name"><strong>Kadai Paneer</strong><br>₹140</p> 
+ <div class="cart-controls" id="kadaipaneer"> 
+ <button class="addbtn" 
+onclick="addToCart('KadaiPaneer',140,'kadaipaneer')">Add</button> </div> 
+</div> 
+ </div> 
+ <h1 class="deserthead">DESSERTS</h1> 
+ <div class="menu4"> 
+ <div class="desert"> 
+ <img src="cake2.jpg"> 
+ <p class="name"><strong>Pastry Cake</strong><br>₹100</p> 
+ <div class="cart-controls" id="cake2"> 
+ <button class="add-btn" onclick="addToCart('Pastry Cake',100,'cake2')">Add</button>
+</div> 
+ </div> 
+ <div class="desert"> 
+ <img src="icecream2.jpg"> 
+ <p class="name"><strong>Ice Cream</strong><br>₹70</p> 
+ <div class="cart-controls" id="icecream"> 
+ <button class="add-btn" onclick="addToCart('Ice Cream',70,'icecream')">Add</button> 
+ </div> 
+ </div> 
+ <div class="desert"> 
+ <img src="gulabjammun2.jpg"> 
+ <p class="name"><strong>Gulab Jamun</strong><br>₹50</p> 
+ <div class="cart-controls" id="gulabjammun2"> 
+ <button class="add-btn" 
+onclick="addToCart('GulabJamun',50,'gulabjammun2')">Add</button> 
+ </div> 
+ </div> 
+ <div class="desert"> 
+ <img src="rasmalai.jpg"> 
+ <p class="name"><strong>Rasmalai</strong><br>₹50</p> 
+ <div class="cart-controls" id="rasmalai"> 
+ <button class="add-btn" onclick="addToCart('Rasmalai',50,'rasmalai')">Add</button> 
+ </div> 
+ </div> 
+ </div> 
+ <h1 class="drinkshead">DRINKS</h1> 
+ <div class="menu5"> 
+ <div class="drinks"> 
+ <img src="bluelagoon3.jpg"> 
+ <p class="name"><strong>Blue Lagoon</strong><br>₹110</p>
+<div class="features"> 
+ <div class="f">FRESH INGREDIENTS</div> 
+ <div class="f">FAST DELIVERY</div> 
+ <div class="f">EXPERT CHEFS</div> 
+ <div class="f">BEST TASTE</div> 
+ </div> 
+ </div> 
+ <h1 id="About">ABOUT US</h1> 
+ <div> 
+ <p class="about">Our restaurant is dedicated to delivering fresh, flavorful, and high-quality 
+meals made with love and care.</p> 
+ </div> 
+ <div id="contact"> 
+ <h4 class="gt">Get in Touch</h4> 
+ <p class="contact-info">We would love to hear from you!</p> 
+ <div class="contact-info"> 
+ <p>Bhimavaram, Andhra Pradesh</p> 
+ <p>Call - 9876543201</p> 
+ <p>Email - easydine@gmail.com</p> 
+ </div> 
+ </div> 
+ <div id="cartBtn" onclick="goToCart()"> 
+ <span id="cartCount">0</span> 
+ </div> 
+ <script src="script.js"></script> 
+</body> 
+</html>
