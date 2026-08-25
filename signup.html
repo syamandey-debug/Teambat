@@ -19,7 +19,7 @@ background: #111;
 padding: 30px; 
 border-radius: 12px; 
 width: 320px; 
-textalign: center; 
+text-align: center; 
  } 
 input { 
 width: 90%; 
@@ -44,7 +44,7 @@ background: #ff5722;
  } 
 a { 
 color:orangered; 
-textdecoration: none; 
+text-decoration: none; 
  } 
 p { 
 margin-top: 10px; 
@@ -59,13 +59,14 @@ margin-top: 10px;
  <input type="password" id="password" placeholder="Password"> 
  <button onclick="signup()">Signup</button> 
  <p>Already have an account? <a href="loginpage.html">Login</a></p> 
- </div> <script> function signup() { let user = 
-document.getElementById("username").value; 
+ </div> 
+ <script>
+  function signup() { 
+let user = document.getElementById("username").value; 
 let email = document.getElementById("email").value; 
 let pass = document.getElementById("password").value; 
 if (user === "" || email === "" || pass === "") { 
-alert("Please 
-fill all fields"); return; 
+alert("Please fill all fields"); return; 
  } 
 let 
 userData = { 
@@ -75,8 +76,7 @@ email: email
  };
 localStorage.setItem("user", 
 JSON.stringify(userData)); 
-localStorage.setItem("loggedIn", "true"); alert("Signup 
-successful!"); window.location.href = "index.html"; 
+localStorage.setItem("loggedIn", "true"); alert("Signup successful!"); window.location.href = "index.html"; 
  } 
  </script> 
 </body> 

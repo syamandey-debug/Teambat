@@ -6,7 +6,7 @@
  body { 
  background: black; 
 color: white; 
-fontfamily: Arial; 
+font-family: Arial; 
  text-align: center; 
 margin-top: 100px; 
  } 
@@ -39,7 +39,7 @@ pointer;
  .gmail-btn { 
 background: #ff4500; 
 color: white; 
-fontweight: bold; 
+font-weight: bold; 
 width: 90%; 
 padding: 10px; 
  margin: 10px; 
@@ -76,8 +76,7 @@ let user = document.getElementById("username").value;
 let pass = document.getElementById("password").value; 
 let storedData = localStorage.getItem("user"); 
  if 
-(!storedData) { alert("No user found. Please signup 
-first."); return; 
+(!storedData) { alert("No user found. Please signup first."); return; 
  } 
  let userObj = JSON.parse(storedData); 
  if (user === userObj.username && pass === userObj.password) { 
