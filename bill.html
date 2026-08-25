@@ -1,20 +1,115 @@
-<!DOCTYPE html> 
-<html> 
-<head> 
-<title>Bill</title> 
-<link rel="stylesheet" href="bill.css"> 
-</head> 
-<body> 
-<h1> Order Summary</h1> 
-<div id="billItems"></div> 
-<h2 id="totalBill"></h2> 
-<h3>Select Payment Method</h3> 
-<div class="payment"> 
- <label><input type="radio" name="pay" value="upi"> UPI</label> 
- <label><input type="radio" name="pay" value="card"> Card</label> 
-<label><input type="radio" name="pay" value="cod"> Cash</label> 
-</div> 
-<button onclick="payNow()">Pay Now</button> 
-<script src="bill.js"></script> 
-</body> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #222;
+            margin-bottom: 30px;
+        }
+
+        #billItems {
+            width: 70%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        #totalBill {
+            width: 70%;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: white;
+            border-radius: 8px;
+            color: #198754;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        h3 {
+            margin-top: 30px;
+            color: #333;
+        }
+
+        .payment {
+            width: 70%;
+            margin: 15px auto 25px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .payment label {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .payment input {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 6px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Order Summary</h1>
+
+    <div id="billItems"></div>
+
+    <h2 id="totalBill"></h2>
+
+    <h3>Select Payment Method</h3>
+
+    <div class="payment">
+        <label>
+            <input type="radio" name="pay" value="upi">
+            UPI
+        </label>
+
+        <label>
+            <input type="radio" name="pay" value="card">
+            Card
+        </label>
+
+        <label>
+            <input type="radio" name="pay" value="cod">
+            Cash
+        </label>
+    </div>
+
+    <button onclick="payNow()">Pay Now</button>
+
+    <script src="bill.js"></script>
+
+</body>
 </html>
