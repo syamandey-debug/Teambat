@@ -6,15 +6,17 @@
  <title>EasyDine</title> 
  <link rel="stylesheet" href="style.css"> 
 <script> let isLoggedIn = 
-localStorage.getItem("loggedIn"); if (isLoggedIn 
-!== "true") { window.location.href = 
-"loginpage.html"; 
+localStorage.getItem("loggedIn");
+ if (isLoggedIn !== "true") 
+ { window.location.href = "loginpage.html"; 
  } 
  </script> 
 </head> 
 <body> 
  <div class="navbar"> 
- <div class="title"><h2>EASYDINE</h2></div> 
+ <div class="title">
+    <h2>EASYDINE</h2>
+</div> 
  <ul> 
  <li><a href="#hero">Home</a></li> 
  <li><a href="#sthead">Menu</a></li> 
@@ -28,9 +30,7 @@ localStorage.getItem("loggedIn"); if (isLoggedIn
  <p class="p1">We serve happiness on a plate with passion and quality ingredients.</p> 
 <button>ORDER NOW</button> 
  </div> 
- <img class="heroimg" 
-src="https://images.stockcake.com/public/4/9/4/494e75270b704f6db997-
-00dd8b94d734_large/delicious-biryani-feast-stockcake.jpg"> 
+ <img class="heroimg" src="https://images.stockcake.com/public/4/9/4/494e75270b704f6db997-00dd8b94d734_large/delicious-biryani-feast-stockcake.jpg"> 
  </div> 
  <h1 id="sthead">STARTERS</h1> 
  <div class="menu1"> 
@@ -38,8 +38,7 @@ src="https://images.stockcake.com/public/4/9/4/494e75270b704f6db997-
  <img src="chicken65.jpg"> 
  <p class="name"><strong>Chicken 65</strong><br>₹200</p> 
  <div class="cart-controls" id="chicken65"> 
- <button class="add-btn" onclick="addToCart('Chicken 
-65',200,'chicken65')">Add</button> 
+ <button class="add-btn" onclick="addToCart('Chicken 65',200,'chicken65')">Add</button> 
  </div> 
 </div> 
  <div class="starters"> 
@@ -54,8 +53,7 @@ onclick="addToCart('ChickenLollipop',180,'chickenlollipop')">Add</button>
  <img src="chickenkebab.jpg"> 
  <p class="name"><strong>Chicken Kebab</strong><br>₹250</p> 
  <div class="cart-controls" id="chickenkebab"> 
- <button class="add-btn" 
-onclick="addToCart('ChickenKebab',250,'chickenkebab')">Add</button> 
+ <button class="add-btn" onclick="addToCart('ChickenKebab',250,'chickenkebab')">Add</button> 
  </div> 
  </div> 
  <div class="starters"> 
@@ -72,8 +70,7 @@ onclick="addToCart('ChickenKebab',250,'chickenkebab')">Add</button>
  <img src="dumbiryani.jpg"> 
  <p class="name"><strong>Dum Biryani</strong><br>₹250</p> 
  <div class="cart-controls" id="dumbiryani"> 
- <button class="add-btn" onclick="addToCart('Dum 
-Biryani',250,'dumbiryani')">Add</button> 
+ <button class="add-btn" onclick="addToCart('Dum Biryani',250,'dumbiryani')">Add</button> 
  </div> 
  </div> 
  <div class="biryani"> 
@@ -87,15 +84,13 @@ onclick="addToCart('FrypieceBiryani',300,'frypiece')">Add</button> </div>
  <img src="kundabiryani.jpg"> 
  <p class="name"><strong>Kunda Biryani</strong><br>₹380</p> 
  <div class="cart-controls" id="kundabiryani"> 
- <button class="add-btn" onclick="addToCart('Kunda 
-Biryani',380,'kundabiryani')">Add</button> </div> 
+ <button class="add-btn" onclick="addToCart('Kunda Biryani',380,'kundabiryani')">Add</button> </div> 
  </div> 
  <div class="biryani"> 
  <img src="mandi.jpg"> 
  <p class="name"><strong>Mandi Biryani</strong><br>₹680</p> 
  <div class="cart-controls" id="mandi"> 
- <button class="add-btn" onclick="addToCart('Mandi 
-Biryani',680,'mandi')">Add</button> 
+ <button class="add-btn" onclick="addToCart('Mandi Biryani',680,'mandi')">Add</button> 
  </div> 
  </div> 
  </div> 
@@ -106,8 +101,7 @@ Biryani',680,'mandi')">Add</button>
  <p class="name"><strong>Chicken Butter Masala</strong><br>₹190</p> 
  <div class="cart-controls" id="chickenbuttermasala"> 
  <button class="add-btn" 
- onclick="addToCart('Chicken 
-ButterMasala',190,'chickenbuttermasala')">Add</button> 
+ onclick="addToCart('Chicken ButterMasala',190,'chickenbuttermasala')">Add</button> 
  </div> 
  </div> 
  <div class="curry">
